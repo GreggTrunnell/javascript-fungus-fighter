@@ -3,6 +3,16 @@
 // Example:
 // let fungusHP = 100;
 
+//need a starting health value for fungus
+let fungusHP=100;
+let myAP=100;
+
+//need to subtractHp from fungus based on weaponsHP 
+//will need to subtract weapon cost from myAP
+//could maybe use an array for myAp
+
+
+
 function onReady() {
     console.log("Ready to go!")
     
@@ -18,3 +28,19 @@ function onReady() {
 
 
 onReady()
+
+// function addingDivs(event){
+//     //need a variable to access where I want the div to go
+//     let divPlacement= document.querySelector('#divWrapper');
+//     counting++;
+  
+ 
+//     divPlacement.innerHTML+=`
+//     <div class="redFill">
+//     <p>
+//      ${counting}
+     
+//     <button onClick="yellowFill(event)">Yellow</button>
+//     <button onClick="deleteDiv(event)">Delete</button>    </p>
+//     </div>
+//     `
