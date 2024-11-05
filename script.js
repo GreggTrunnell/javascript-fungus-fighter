@@ -4,9 +4,15 @@
 // let fungusHP = 100;
 
 //need a starting health value for fungus
-let fungusHP=100;
+let fungusHp=100;
 let myAP=100;
 
+let arcaneSepterHp=14;
+
+function attacking(event){
+ let newFungus=document.querySelector("#hp-meter").value-=arcaneSepterHp;
+    console.log('attacking');
+}
 //need to subtractHp from fungus based on weaponsHP 
 //will need to subtract weapon cost from myAP
 //could maybe use an array for myAp
