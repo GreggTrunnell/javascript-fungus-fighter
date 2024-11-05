@@ -4,7 +4,7 @@
 // let fungusHP = 100;
 
 //need a starting health value for fungus
-let fungusHp=document.querySelector("#hp-text");
+//let fungusHp=document.querySelector("#hp-text");
 let myAP=100;
 
 //writing some dummy variables to test things will probably turn into object var's
@@ -14,9 +14,10 @@ let dragonBladeHp=47;//ap=38
 let starFireHp=25;//ap=33
 
 function attacking(event){
-let fungusHp=document.querySelector("#hp-text");
-document.querySelector("#hp-meter").value-=arcaneSepterHp;
-    console.log('attacking');
+document.querySelector("#hp-meter").value-=dragonBladeHp;
+//line below will affect hp text but fills with nan
+document.querySelector("#hpText").innerText-=dragonBladeHp;
+console.log('attacking');
 }
 //need to subtractHp from fungus based on weaponsHP 
 //will need to subtract weapon cost from myAP
